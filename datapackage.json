@@ -1,0 +1,241 @@
+{
+  "name": "prop-firm-rules-fees-regulator-log",
+  "title": "Prop firm rules, fees and regulator log (BrokerCatalogue)",
+  "description": "Rules, fees and payout terms for 76 prop trading firms (models, platforms, profit split, loss limits, time limits and more), each with sources and a confidence level, plus a dated log of 13 regulator statements and events. CC BY 4.0.",
+  "homepage": "https://brokercatalogue.com/prop-firm-data/",
+  "version": "1.0.0",
+  "created": "2026-09-29",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "BrokerCatalogue",
+      "path": "https://brokercatalogue.com/",
+      "role": "author"
+    },
+    {
+      "title": "Catalinq LLC",
+      "role": "publisher"
+    }
+  ],
+  "resources": [
+    {
+      "name": "bc-prop-firms-v1-2026-09-29",
+      "path": "bc-prop-firms-v1-2026-09-29.csv",
+      "description": "One row per prop firm.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 48825,
+      "hash": "sha256:c2c3ecd2563ff6d712889dd64d5141ab112b1d109c4459a5b748263658440be8",
+      "schema": {
+        "fields": [
+          {
+            "name": "slug",
+            "description": "Our ID for the firm (the end of its profile URL).",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "description": "Firm name.",
+            "type": "string"
+          },
+          {
+            "name": "website",
+            "description": "Official website.",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "description": "active, watch (something changed that you should read about first) or closed (stopped selling challenges).",
+            "type": "string"
+          },
+          {
+            "name": "status_note",
+            "description": "Why a firm is on watch or closed.",
+            "type": "string"
+          },
+          {
+            "name": "founded",
+            "description": "Year founded, as stated by the firm or a named second source.",
+            "type": "string"
+          },
+          {
+            "name": "hq_city",
+            "description": "City where the firm says it is based.",
+            "type": "string"
+          },
+          {
+            "name": "hq_country",
+            "description": "Country where the firm says it is based.",
+            "type": "string"
+          },
+          {
+            "name": "models",
+            "description": "Challenge models: one-step, two-step, three-step, instant-funding. Several values are separated by |.",
+            "type": "string"
+          },
+          {
+            "name": "assets",
+            "description": "Markets: forex, indices, commodities, crypto, futures, stocks. Separated by |.",
+            "type": "string"
+          },
+          {
+            "name": "platforms",
+            "description": "Trading platforms. Separated by |.",
+            "type": "string"
+          },
+          {
+            "name": "max_allocation",
+            "description": "Largest account or combined allocation offered.",
+            "type": "string"
+          },
+          {
+            "name": "profit_split",
+            "description": "Trader share of profits.",
+            "type": "string"
+          },
+          {
+            "name": "challenge_fee_from",
+            "description": "Lowest challenge fee we found, with the account size or condition it depends on.",
+            "type": "string"
+          },
+          {
+            "name": "account_sizes",
+            "description": "Account sizes offered. Separated by |.",
+            "type": "string"
+          },
+          {
+            "name": "payout_frequency",
+            "description": "How often the firm pays.",
+            "type": "string"
+          },
+          {
+            "name": "daily_drawdown",
+            "description": "Daily loss limit.",
+            "type": "string"
+          },
+          {
+            "name": "max_drawdown",
+            "description": "Maximum loss limit.",
+            "type": "string"
+          },
+          {
+            "name": "min_trading_days",
+            "description": "Minimum trading days to pass.",
+            "type": "string"
+          },
+          {
+            "name": "time_limit",
+            "description": "Time limit to pass, if any.",
+            "type": "string"
+          },
+          {
+            "name": "news_trading",
+            "description": "yes, restricted or unknown.",
+            "type": "string"
+          },
+          {
+            "name": "weekend_holding",
+            "description": "yes, no, restricted or unknown.",
+            "type": "string"
+          },
+          {
+            "name": "ea_allowed",
+            "description": "Expert advisors (trading robots): yes, no, restricted or unknown.",
+            "type": "string"
+          },
+          {
+            "name": "broker_backing",
+            "description": "Broker or liquidity provider named by the firm.",
+            "type": "string"
+          },
+          {
+            "name": "sources",
+            "description": "Links we used. Separated by |.",
+            "type": "string"
+          },
+          {
+            "name": "confidence",
+            "description": "high, medium or low. Lower when a figure came from a second source.",
+            "type": "string"
+          },
+          {
+            "name": "checked_on",
+            "description": "Date we checked (YYYY-MM-DD).",
+            "type": "date"
+          },
+          {
+            "name": "profile_url",
+            "description": "Our profile of the firm.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "bc-prop-firm-regulator-log-v1-2026-09-29",
+      "path": "bc-prop-firm-regulator-log-v1-2026-09-29.csv",
+      "description": "One row per regulator statement or industry event.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4203,
+      "hash": "sha256:359e37cd9aca282b2a2ddb80ddefd4a0c6db72384a689ce7e251b6e55ac8bbaf",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "description": "Date of the statement or event (YYYY-MM-DD).",
+            "type": "date"
+          },
+          {
+            "name": "date_text",
+            "description": "The same date in words.",
+            "type": "string"
+          },
+          {
+            "name": "country",
+            "description": "Country or region.",
+            "type": "string"
+          },
+          {
+            "name": "who",
+            "description": "Who acted.",
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "description": "regulator or industry (a change made by firms, not an act of a regulator).",
+            "type": "string"
+          },
+          {
+            "name": "what_happened",
+            "description": "What happened, in plain English.",
+            "type": "string"
+          },
+          {
+            "name": "source_name",
+            "description": "The document or report we used.",
+            "type": "string"
+          },
+          {
+            "name": "source_url",
+            "description": "Link to it.",
+            "type": "string"
+          },
+          {
+            "name": "checked_on",
+            "description": "Date we checked (YYYY-MM-DD).",
+            "type": "date"
+          }
+        ]
+      }
+    }
+  ]
+}

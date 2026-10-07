@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below and link to https://brokercatalogue.com/prop-firm-data/"
+type: dataset
+title: "Prop firm rules, fees and regulator log"
+version: "1.0.0"
+date-released: "2026-09-29"
+license: CC-BY-4.0
+url: "https://brokercatalogue.com/prop-firm-data/"
+abstract: "Rules, fees and payout terms for 76 prop trading firms (models, platforms, profit split, loss limits, time limits and more), each with sources and a confidence level, plus a dated log of 13 regulator statements and events. CC BY 4.0."
+keywords:
+  - "prop trading"
+  - "prop firms"
+  - "funded trader"
+  - "trading rules"
+  - "forex"
+  - "CFD"
+  - "regulation"
+  - "fintech"
+  - "open data"
+authors:
+  - name: "BrokerCatalogue"
+    website: "https://brokercatalogue.com/"
+    email: "info@brokercatalogue.com"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23205560"
+    description: "All versions (concept DOI)"
+  - type: doi
+    value: "10.5281/zenodo.23205561"
+    description: "Version 1.0.0 (29 September 2026)"
